@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Jharkhand Journey</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0f2b65;
+      --secondary-color: #5210ed;
+      --text-dark: #0a0a0a;
+      --text-light: #666;
+      --white: #ffffff;
+      --max-width: 1200px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #f9f9f9;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-btn {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      color: var(--white);
+      background-color: var(--primary-color);
+      border: none;
+      border-radius: 5rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .booking-form {
+      background-color: var(--white);
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .booking-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .booking-form input,
+    .booking-form select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .booking-form button {
+      background-color: var(--primary-color);
+      color: var(--white);
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .booking-form button:hover {
+      background-color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Book Your Jharkhand Adventure</h1>
+    <p>Secure your spot today and experience the rich culture, nature, and traditions of Jharkhand. Plan your getaway in just a few clicks!</p>
+
+    <!--<a href="#booking-form" class="cta-btn">Start Booking</a> -->
+
+    <form class="booking-form" id="booking-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="destination">Select Destination</label>
+      <select id="destination" name="destination" required>
+        <option value="">-- Choose --</option>
+        <option value="Netarhat">Netarhat</option>
+        <option value="Betla National Park">Betla National Park</option>
+        <option value="Hundru Falls">Hundru Falls</option>
+        <option value="Parasnath Hill">Parasnath Hill</option>
+        <option value="Deoghar">Deoghar</option>
+      </select>
+
+      <label for="start-date">Start Date</label>
+<input type="date" id="start-date" name="start-date" required />
+
+<label for="end-date">End Date</label>
+<input type="date" id="end-date" name="end-date" required />
+
+
+      <label for="people">Number of People</label>
+      <input type="number" id="people" name="people" min="1" required />
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+
+  <script>
+  const form = document.getElementById("booking-form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = form.fullname.value;
+    const startDate = form['start-date'].value;
+    const endDate = form['end-date'].value;
+
+    alert(`Thank you, ${name}! Your booking from ${startDate} to ${endDate} has been received. We’ll contact you shortly.`);
+    form.reset();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jharkhand Local Guides</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0f2b65;
+      --secondary-color: #5210ed;
+      --text-dark: #0a0a0a;
+      --text-light: #666;
+      --white: #ffffff;
+      --card-bg: #ffffff;
+      --rating-color: #fbb034;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #f3f4f6;
+      color: var(--text-dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .guide-card {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .guide-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .guide-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .guide-info {
+      padding: 1.5rem;
+    }
+
+    .guide-info h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .guide-info p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .guide-info .experience,
+    .guide-info .rating,
+    .guide-info .price {
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .guide-info .rating span {
+      color: var(--rating-color);
+    }
+
+    .guide-info button {
+      background-color: var(--primary-color);
+      color: var(--white);
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 5rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .guide-info button:hover {
+      background-color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Meet Your Local Guides</h1>
+
+    <div class="guide-grid">
+      
+      <!-- Guide 1 -->
+      <div class="guide-card">
+        <img src="assets/Guide-1.jpg" alt="Guide 1">
+        <div class="guide-info">
+          <h3>Ravi Kumar</h3>
+          <p>Fluent in Hindi, English, and Santhali. Specialized in eco-tours.</p>
+          <p class="experience">Experience: 7 years</p>
+          <p class="rating">Rating: <span>★ 4.8</span></p>
+          <p class="price">Booking Charge: ₹700/day</p>
+          <button>Book Guide</button>
+        </div>
+      </div>
+
+      <!-- Guide 2 -->
+      <div class="guide-card">
+        <img src="assets/Guide-2.jpg" alt="Guide 2">
+        <div class="guide-info">
+          <h3>Anjali Devi</h3>
+          <p>Culture expert with a passion for tribal art and music.</p>
+          <p class="experience">Experience: 5 years</p>
+          <p class="rating">Rating: <span>★ 4.6</span></p>
+          <p class="price">Booking Charge: ₹600/day</p>
+          <button>Book Guide</button>
+        </div>
+      </div>
+
+      <!-- Guide 3 -->
+      <div class="guide-card">
+        <img src="assets/Guide-3.jpg" alt="Guide 3">
+        <div class="guide-info">
+          <h3>Sunil Mahato</h3>
+          <p>Adventure trek leader for Netarhat and Betla forest trails.</p>
+          <p class="experience">Experience: 10 years</p>
+          <p class="rating">Rating: <span>★ 4.9</span></p>
+          <p class="price">Booking Charge: ₹850/day</p>
+          <button>Book Guide</button>
+        </div>
+      </div>
+
+      <!-- Guide 4 -->
+      <div class="guide-card">
+        <img src="assets/Guide-4.jpg" alt="Guide 4">
+        <div class="guide-info">
+          <h3>Sita Marandi</h3>
+          <p>Expert in temple and spiritual circuits across Deoghar and Parasnath.</p>
+          <p class="experience">Experience: 8 years</p>
+          <p class="rating">Rating: <span>★ 4.7</span></p>
+          <p class="price">Booking Charge: ₹750/day</p>
+          <button>Book Guide</button>
+        </div>
+      </div>
+
+      <!-- Guide 5 -->
+      <div class="guide-card">
+        <img src="assets/Guide-5.jpg" alt="Guide 5">
+        <div class="guide-info">
+          <h3>Arvind Toppo</h3>
+          <p>Local historian and nature enthusiast with deep tribal knowledge.</p>
+          <p class="experience">Experience: 9 years</p>
+          <p class="rating">Rating: <span>★ 4.8</span></p>
+          <p class="price">Booking Charge: ₹700/day</p>
+          <button>Book Guide</button>
+        </div>
+      </div>
+
+      <!-- Guide 6 -->
+      <div class="guide-card">
+        <img src="assets/Guide-6.jpg" alt="Guide 6">
+        <div class="guide-info">
+          <h3>Kavita Kisku</h3>
+          <p>Wildlife photographer and multilingual guide (Hindi, English, Ho).</p>
+          <p class="experience">Experience: 6 years</p>
+          <p class="rating">Rating: <span>★ 4.5</span></p>
+          <p class="price">Booking Charge: ₹650/day</p>
+          <button>Book Guide</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

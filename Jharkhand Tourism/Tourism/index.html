@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Jharkhand Tourism</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Jharkhand Tourism</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#package">PACKAGE</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="book-now.html">BOOK TRIP</a></li>
+      </ul>
+      <div class="nav__btns">
+  <button class="btn" onclick="window.location.href='book-now.html'">BOOK TRIP</button>
+</div>
+
+    </nav>
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>ELEVATE YOUR TRAVEL JOURNEY</p>
+          <h1>Experience the Soul of Jharkhand.</h1>
+          <div class="header__btns">
+            <button class="btn">Book A Trip Now</button>
+            <a href="book-now.html">
+              <span><i class="ri-play-circle-fill"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="about">
+      <h2 class="section__header">Popular Destination</h2>
+      <p class="section__description">
+        Discover the Most Loved Destinations Around the Jharkhand
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/destination-1.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Ranchi Lake & Tagore Hill</h4>
+              <p>Ranchi Jharkhand, India</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-2.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Bistupur Market</h4>
+              <p>Jamshedpur Jharkhand, India</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Patratu Valley & Dam</h4>
+              <p>Ramgarh Jharkhand, India</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+  <img src="assets/bokaro.jpg" alt="Bokaro" />
+  <div class="destination__card__details">
+    <div>
+      <h4>Bokaro Steel City</h4>
+      <p>Bokaro, Jharkhand, India</p>
+    </div>
+    <div class="destination__rating">
+      <span><i class="ri-star-fill"></i></span>
+      4.6
+    </div>
+  </div>
+</div>
+
+<div class="destination__card">
+  <img src="assets/deoghar.jpg" alt="Deoghar" />
+  <div class="destination__card__details">
+    <div>
+      <h4>Deoghar Baidyanath Temple</h4>
+      <p>Deoghar, Jharkhand, India</p>
+    </div>
+    <div class="destination__rating">
+      <span><i class="ri-star-fill"></i></span>
+      4.8
+    </div>
+  </div>
+</div>
+
+<div class="destination__card">
+  <img src="assets/jamshedpur.jpg" alt="Jamshedpur" />
+  <div class="destination__card__details">
+    <div>
+      <h4>Jamshedpur Jubilee Park</h4>
+      <p>Jamshedpur, Jharkhand, India</p>
+    </div>
+    <div class="destination__rating">
+      <span><i class="ri-star-fill"></i></span>
+      4.7
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+
+    <section class="section__container marketplace__container" id="marketplace">
+  <h2 class="section__header">Marketplace</h2>
+  <p class="section__description">
+    Shop local – authentic tribal handicrafts, unique stays, and curated experiences.
+  </p>
+  <div class="marketplace__grid">
+    <!-- Product Card -->
+    <div class="marketplace__card">
+      <img src="assets/handicraft1.jpg" alt="Tribal Handicraft" />
+      <div class="marketplace__info">
+        <h4>Tribal Bamboo Basket</h4>
+        <p>Handmade by local artisans of Khunti</p>
+        <strong>₹499</strong>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+    
+    <div class="marketplace__card">
+      <img src="assets/ecostay.jpg" alt="Eco Stay" />
+      <div class="marketplace__info">
+        <h4>Eco Stay in Netarhat</h4>
+        <p>2 Nights in scenic forest cottage with meals</p>
+        <strong>₹3,200</strong>
+        <button class="btn" onclick="window.location.href='book-now.html'">Book Now</button>
+      </div>
+    </div>
+
+    <div class="marketplace__card">
+      <img src="assets/tribal-dance.jpg" alt="Cultural Experience" />
+      <div class="marketplace__info">
+        <h4>Tribal Dance Experience</h4>
+        <p>Live cultural event with dinner and guide</p>
+        <strong>₹899</strong>
+        <button class="btn" onclick="window.location.href='book-now.html'">Book Now</button>
+      </div>
+    </div>
+    
+    <!-- Add more products as needed -->
+  </div>
+</section>
+
+    <section class="section__container discover__container">
+      <h2 class="section__header">Discover The Jharkhand From Above</h2>
+      <p class="section__description">
+        Experience Breathtaking Views and Unique Perspectives
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-camera-lens-line"></i></span>
+          <h4> Tribal Traditions</h4>
+          <p>
+            Immerse yourself in rich cultural heritage. 
+            Witness ancient rituals and participate in vibrant tribal festivals.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-ship-line"></i></span>
+          <h4>Unspoiled Wilderness</h4>
+          <p>
+            Explore breathtaking waterfalls and ancient forests. 
+            Find peace in nature and embark on an unforgettable trek.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Ancient Forts & Temples</h4>
+          <p>
+            Journey through history. Discover magnificent forts and 
+            serene temples, each with a captivating story to tell.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="assets/showcase.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+        <h4>UNLEASH THE SOUL OF JHARKHAND</h4>
+        <p>
+          Embark on a journey to the heart of India's hidden gem with our platform. 
+          Our mission is to connect you directly with the vibrant tribal cultures, 
+          lush natural landscapes, and rich historical heritage of Jharkhand. 
+          We provide curated itineraries and authentic local experiences,
+          ensuring every trip is not just a visit, but a meaningful discovery.
+        </p>
+        <p>
+          This platform is your ultimate travel companion, helping you navigate new places with confidence and excitement. 
+          From finding reliable local guides to discovering authentic tribal handicrafts and eco-friendly homestays, 
+          we give you the tools to create unforgettable memories. 
+          We're dedicated to making your travel experience seamless, sustainable, and truly enriching.
+        <div class="showcase__btn" style="margin-top:3rem;">
+        <div class="showcase__btn">
+  <a href="https://www.skyscanner.co.in/" target="_blank" class="btn">
+    Book A Flight Now
+    <span><i class="ri-arrow-right-line"></i></span>
+  </a>
+</div>
+
+
+
+
+      </div>
+    </section>
+
+    
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header">Journey To The Sky Made Simple!</h2>
+      <p class="section__description">
+        Effortless Planning for Your Next Adventure
+      </p>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Seamless Booking Process</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Easy Reservations, One Click Away</h4>
+            <p>
+              From flights and accommodations to activities and transfers,
+              everything you need is available at your fingertips, making travel
+              planning effortless.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Tailored Itineraries</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Customized Plans Just for You</h4>
+            <p>
+              Enjoy personalized travel plans designed to match your preferences
+              and interests. Whether you seek adventure or cultural immersion,
+              our tailored itineraries ensure your journey is uniquely yours.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Expert Local Insights</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Insider Tips and Recommendations</h4>
+            <p>
+              We provide curated recommendations for dining, sightseeing, and
+              hidden gems, so you can experience each destination like a local.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container">
+      <h2 class="section__header">Loved By Over Thousand Travelers</h2>
+      <p class="section__description">
+        Discover the stories of wanderlust and cherished memories through the
+        eyes of our valued clients.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  The Jharkhand platform completely changed my trip! 
+                  The personalized itinerary helped me discover places
+                  I never would have found on my own. It felt like I had 
+                  a personal guide for every step of my journey. Absolutely fantastic!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>Shubhi Malik</h4>
+                  <h5>Travel Blogger</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Connecting with local artisans and staying in a homestay 
+                  through the app made my experience so much more authentic. 
+                  Its more than just a trip; its a way to truly immerse yourself 
+                  in the rich culture of Jharkhand. I highly recommend it!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Amit Kumar</h4>
+                  <h5>Adventure Enthusiast</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Connecting with local artisans and staying in a homestay through 
+                  the app made my experience so much more authentic. It was more than 
+                  a trip; it was a true immersion into the rich culture of Jharkhand. 
+                  I highly recommend it!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Yashansh Srivastav</h4>
+                  <h5>Cultural Historian</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  The digital platform transformed my business trip into an 
+                  organized and rewarding experience. From the real-time 
+                  updates to the easy booking process, it's the perfect tool 
+                  for any professional on the go.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>Ridharm malik</h4>
+                  <h5>Business Executive</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <h4>10+</h4>
+        <p>Years Experience</p>
+      </div>
+      <div class="banner__card">
+        <h4>12K</h4>
+        <p>Happy Clients</p>
+      </div>
+      <div class="banner__card">
+        <h4>4.8</h4>
+        <p>Overall Ratings</p>
+      </div>
+    </section>
+
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Jharkhand Tourism</a>
+          </div>
+          <p>
+            Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cruise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 7856127891
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@Jharkhandtourism
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> JHARKHAND, India
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+    <!-- Floating Chatbot Widget -->
+<div id="jt-chatbot-widget">
+  <!-- Floating circular button -->
+  <button id="jt-chatbot-btn" aria-label="Open Chatbot">
+    <i class="ri-robot-2-line"></i>
+  </button>
+  <!-- Chat window (hidden by default) -->
+  <div id="jt-chatbot-window" class="jt-hidden">
+    <div class="jt-chatbot-header">
+      <img src="assets/header.png" alt="Jharkhand Tourism Logo" class="jt-chatbot-logo" />
+      <span class="jt-chatbot-title">Jharkhand Tourism</span>
+      <button id="jt-chatbot-close" aria-label="Close Chatbot">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+    <div id="jt-chatbot-messages" class="jt-chatbot-messages">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="jt-chatbot-input">
+      <input type="text" id="jt-chatbot-text" placeholder="Type your message..." autocomplete="off" />
+      <button id="jt-chatbot-mic" aria-label="Voice Input">
+        <i class="ri-mic-line"></i>
+      </button>
+      <button id="jt-chatbot-send" aria-label="Send">
+        <i class="ri-send-plane-2-line"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+const BACKEND_URL = 'http://localhost:3000/chat';
+
+// Get references to the DOM elements
+const chatWidget = document.getElementById('jt-chatbot-widget');
+const chatButton = document.getElementById('jt-chatbot-btn');
+const chatWindow = document.getElementById('jt-chatbot-window');
+const closeButton = document.getElementById('jt-chatbot-close');
+const messagesContainer = document.getElementById('jt-chatbot-messages');
+const textInput = document.getElementById('jt-chatbot-text');
+const sendButton = document.getElementById('jt-chatbot-send');
+const micButton = document.getElementById('jt-chatbot-mic');
+
+// Toggle chat window visibility
+chatButton.addEventListener('click', () => {
+  chatWindow.classList.toggle('jt-hidden');
+});
+
+closeButton.addEventListener('click', () => {
+  chatWindow.classList.add('jt-hidden');
+});
+
+// Handle sending messages
+sendButton.addEventListener('click', sendMessage);
+textInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    sendMessage();
+  }
+});
+
+function sendMessage() {
+  const text = textInput.value.trim();
+  if (text === '') return;
+
+  // Display user message
+  displayMessage(text, 'user');
+
+  // Send message to backend
+  fetch(BACKEND_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ message: text }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      // Display bot response
+      displayMessage(data.reply, 'bot');
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+
+  textInput.value = '';
+}
+
+// Display message in the chat
+function displayMessage(text, sender) {
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('jt-message', `jt-message--${sender}`);
+  messageElement.textContent = text;
+  messagesContainer.appendChild(messageElement);
+
+  // Scroll to the bottom of the chat
+  messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
+// TODO: Implement voice input functionality
+micButton.addEventListener('click', () => {
+  // Placeholder for voice input feature
+  displayMessage('Voice input feature is not yet implemented.', 'bot');
+});
+
+    </script>
+  </body>
+</html>
